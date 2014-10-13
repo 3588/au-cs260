@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AUColorPicker</string>
+    <string name="gold">Gold</string>
+    <string name="prompt">Click on a button to change the background!</string>
+    <string name="purple">Purple</string>
+
+</resources>

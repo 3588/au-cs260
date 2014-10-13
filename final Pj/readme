@@ -1,0 +1,4 @@
+The main job
+1. Send(Post) data to webadvisor - username & password
+2. check the it login or not , if not output message go back to 1 layout
+3. get(java curl) data from website, and put to sqllite. - check if its has wifi or wireless dat
