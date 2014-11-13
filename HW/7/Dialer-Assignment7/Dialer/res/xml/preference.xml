@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+       <EditTextPreference   
+           	android:defaultValue="419-289-5960"
+           	android:key="number"
+           	android:digits="0123456789#*"
+           	android:title="Default number" 
+           	android:summary="Please enter default number">
+           	</EditTextPreference>
+</PreferenceScreen>

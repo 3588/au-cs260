@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="left" >
+     
+    <TextView
+        android:id="@+id/manufacturer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="3dp"
+        android:text="Manufacturer:"
+        android:textColor="#ff0000"
+        android:textSize="20dp" />
+        
+    <TextView
+        android:id="@+id/part"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/manufacturer"
+        android:layout_toRightOf="@+id/manufacturer"
+        android:gravity="center"
+        android:layout_toLeftOf="@+id/price"
+        android:text="Part:"
+        android:textColor="#0000ff"
+        android:textSize="20dp" />
+     
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/part"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="3dp"
+        android:text="Price:"
+        android:textColor="#00ff00"
+        android:textSize="20dp" />
+
+</RelativeLayout>

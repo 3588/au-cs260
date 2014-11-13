@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/test"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/club_titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#68ADB1" >
+
+        <TextView
+            android:id="@+id/clubinfo_name"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="webadvisor login"
+            android:textColor="#F8F8F8"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical" >
+
+        <!-- android:paddingLeft="10dp" -->
+        <!-- 账号 -->
+
+        <EditText
+            android:id="@+id/user_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入账号"
+            android:text="jhuang"
+            android:textSize="20sp" />
+
+        <!-- 分割线 -->
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="#C6C6C6" />
+        <!-- 密码输入框 -->
+
+        <EditText
+            android:id="@+id/user_pwd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:text="Au-1101579"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/user_land"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#68ADB1"
+            android:text="Login"
+            android:textSize="28sp" 
+            android:onClick="onClick"/>
+        <!-- 记住密码选项 -->
+
+   
+    </LinearLayout>
+
+</LinearLayout>
