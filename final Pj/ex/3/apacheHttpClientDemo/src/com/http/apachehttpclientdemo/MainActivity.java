@@ -19,11 +19,11 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 
 
-import com.bgxt.httpUtils.AndroidHttpClientUtils;
 
-import edu.ashland.cs260.plugin.httpClientUtils;
 
 import android.os.Bundle;
+import android.R.array;
+import android.R.string;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.View;
@@ -63,6 +63,8 @@ public class MainActivity extends Activity {
 				EditText displayEditText=(EditText)findViewById(R.id.editText3);
 				httpClientUtils httpClientUtilsTest;
 				new Thread(httpClientUtilsTest = new httpClientUtils(un,pw)).start();
+	
+			
 				
 				
 			}
@@ -78,7 +80,6 @@ public class MainActivity extends Activity {
 				String pw=password.getText().toString();
 				
 				
-				new Thread(new AndroidHttpClientUtils(un,pw)).start();
 			}
 		});
 		 

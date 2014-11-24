@@ -11,11 +11,11 @@ public class HTMLParser {
 		htmlString=html;
 		doc=Jsoup.parse(html);
 	}
-	public String getName() {
+	public String  GET_LIST_VAR1_left_oddrow() {
 		Element t;
 		t=doc.select("div.mainBody").first();
 		t=t.select("div.custom").first();
 		t=t.select("div.customText").first();
-		return firstname=t.toString();
+		return 
 	}
 }
