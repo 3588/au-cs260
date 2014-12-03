@@ -19,17 +19,15 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 
 
-
+import com.bgxt.httpUtils.AndroidHttpClientUtils;
+import com.bgxt.httpUtils.httpClientUtils;
 
 import android.os.Bundle;
-import android.R.array;
-import android.R.string;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 
 
 
@@ -39,16 +37,13 @@ public class MainActivity extends Activity {
 	 
 	private EditText username,password;
 	
-	private TextView studentName;
-	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
 		btnLogin=(Button)findViewById(R.id.btnLogin);
-		btnAndroidHttpClient=(Button)findViewById(R.id.btnAndrodHttpClient);
-		studentName=(TextView)findViewById(R.id.textView1);
+//		public static TextView tvMsg=(TextView)findViewById(R.id.tvMsg);
 		username=(EditText)findViewById(R.id.editText1);
 		password=(EditText)findViewById(R.id.editText2);
 		
@@ -60,16 +55,13 @@ public class MainActivity extends Activity {
 				// TODO Auto-generated method stub
 				String un=username.getText().toString();
 				String pw=password.getText().toString();
-				EditText displayEditText=(EditText)findViewById(R.id.editText3);
-				httpClientUtils httpClientUtilsTest;
-				new Thread(httpClientUtilsTest = new httpClientUtils(un,pw)).start();
-	
-			
 				
 				
+				new Thread(new httpClientUtils(un,pw)).start();
 			}
 		});
 		 
+		 btnAndroidHttpClient=(Button)findViewById(R.id.btnAndrodHttpClient);
 		 btnAndroidHttpClient.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
@@ -80,6 +72,7 @@ public class MainActivity extends Activity {
 				String pw=password.getText().toString();
 				
 				
+				new Thread(new AndroidHttpClientUtils(un,pw)).start();
 			}
 		});
 		 

@@ -1,0 +1,117 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true" >
+    
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:background="@drawable/re"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:gravity="center"
+        android:text="Search"
+        android:layout_marginBottom="20dp"
+        android:textSize="30dip" />
+
+     <TextView
+         android:id="@+id/textView2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="2dp"
+         android:layout_marginLeft="5dp"
+         android:layout_below="@+id/textView1"
+         android:text="Term:" />
+     
+	<RadioGroup
+	    android:id="@+id/Gr"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/textView2"
+	    android:layout_below="@+id/textView1"
+	    android:layout_marginBottom="25dp"
+	    android:layout_marginLeft="100dp"
+	    android:checkedButton="@+id/r2015sp"
+	    android:orientation="vertical" >
+
+	<RadioButton
+	    android:id="@+id/r2015sp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Spring Semester 2015" />
+
+    <RadioButton
+        android:id="@+id/r2014fl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fall Semester 2014" />
+    
+    <RadioButton
+        android:id="@+id/r2014sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Summer Semester 2014" />
+	</RadioGroup>
+	
+	<TextView
+         android:id="@+id/textView3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="20dp"
+         android:layout_marginLeft="5dp"
+		 android:layout_below="@+id/Gr"
+         android:text="Class:" />
+
+	<Spinner
+	    android:id="@+id/spinner1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/textView3"
+	    android:layout_below="@+id/Gr"
+	    android:minWidth="200dip"
+	    android:layout_marginBottom="20dp"
+	    android:layout_marginLeft="105dp" />
+	
+<TextView
+         android:id="@+id/textView4"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="20dp"
+         android:layout_marginLeft="5dp"
+		 android:layout_below="@+id/textView3"
+         android:text="Class Number:" />
+
+<EditText
+    android:id="@+id/classnumber1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/textView4"
+    android:layout_below="@+id/spinner1"
+    android:layout_marginBottom="20dp"
+    android:layout_marginLeft="105dp"
+    android:ems="10"
+    android:maxLength="4"
+    android:inputType="number"
+    android:width="200dp" >
+
+    </EditText>
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:background="@layout/button001"
+        android:minWidth="150dip"
+        android:padding="15dp"
+        android:text="Search"
+        android:textColor="@layout/text_color" />
+
+</RelativeLayout>
+</ScrollView>

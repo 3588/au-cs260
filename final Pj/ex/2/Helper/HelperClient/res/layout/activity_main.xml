@@ -18,7 +18,7 @@
             android:layout_alignParentLeft="true"
             android:gravity="center"
             android:singleLine="true"
-            android:text="webadvisor login"
+            android:text="登陆"
             android:textColor="#F8F8F8"
             android:textSize="20sp" />
     </RelativeLayout>
@@ -40,9 +40,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:hint="请输入账号"
-            android:text="jhuang"
             android:textSize="20sp" />
-
         <!-- 分割线 -->
 
         <View
@@ -59,12 +57,11 @@
             android:layout_height="wrap_content"
             android:hint="请输入密码"
             android:inputType="textPassword"
-            android:text="Au-1101579"
             android:textSize="20sp" />
-
     </LinearLayout>
 
     <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="40dp"
@@ -77,9 +74,8 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:background="#68ADB1"
-            android:text="Login"
-            android:textSize="28sp" 
-            android:onClick="onClick"/>
+            android:text="登陆"
+            android:textSize="28sp" />
         <!-- 记住密码选项 -->
 
    

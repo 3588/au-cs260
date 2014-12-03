@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/re"
+    android:layout_height="match_parent" >
+
+    <TextView 
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="WELCOME"
+        android:textSize="40dip"
+        android:gravity="center"
+        android:layout_marginTop="20dip"/>
+     
+     <Button
+        android:id="@+id/btnFavoriteClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:background="@layout/button001"
+        android:minWidth="150dip"
+        android:layout_marginTop="90dip"
+        android:padding="15dp"
+        android:text="Favorite Class"
+        android:textColor="@layout/text_color" />
+    
+     <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnFavoriteClass"
+        android:layout_centerHorizontal="true"
+        android:background="@layout/button001"
+        android:minWidth="150dip"
+        android:layout_marginTop="50dip"
+        android:padding="15dp"
+        android:text="Search"
+        android:textColor="@layout/text_color" />
+     
+    <Button android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textSize="20dip"
+        android:textColor="@layout/text_color"
+        android:textStyle="bold"
+        android:id="@+id/btnLogout"
+        android:layout_marginTop="350dip"
+        android:background="@null"/>
+	
+
+    
+</RelativeLayout>
+

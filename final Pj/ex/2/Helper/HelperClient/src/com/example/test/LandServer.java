@@ -23,14 +23,14 @@ import org.apache.http.params.HttpParams;
 import android.util.Log;
 
 public class LandServer {
-	private String url = "https://webadvisor.ashland.edu/WebAdvisor/WebAdvisor?TOKENIDX=99999999999&SS=LGRQ";
+	private String url = "http://192.168.1.104:8080/login/SchoolHelper";
 	private String result  ;
 
 	public String doPost(String name, String psd) {
 		HttpClient hc = new DefaultHttpClient();
 		HttpPost hp = new HttpPost(url);
-		NameValuePair n = new BasicNameValuePair("USER.NAME", name);
-		NameValuePair u = new BasicNameValuePair("CURR.PWD", psd);
+		NameValuePair n = new BasicNameValuePair("name", name);
+		NameValuePair u = new BasicNameValuePair("psd", psd);
 		List<NameValuePair> list = new ArrayList<NameValuePair>();
 		list.add(n);
 		list.add(u);
